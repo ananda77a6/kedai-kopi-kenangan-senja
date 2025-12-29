@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #FAF3E0;
+}
+nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: .5fr 1fr;
+    background-color: navy;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+}
+.judul h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3em;
+    color: #c5c1c1;
+    margin-left: 5px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #1C1C1C;
+    text-decoration: none;
+    color:  #c5c1c1;
+    font-size: .8em;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    background-color: rgb(61, 58, 61);
+    padding: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: all .2s ease;
+}
+.menu-ham {
+    display: none;
+    justify-content: space-between;
+    height: 20px;
+    flex-direction: column;
+}
+.menu-ham.on span:first-child {
+    background-color: red;
+    transform-origin: left;
+    transform: rotate(45deg) translate(1px, 1px) ;
+}
+.menu-ham.on span:nth-child(2) {
+    opacity: 0;
+}
+.menu-ham.on span:last-child {
+    background-color: red;
+    transform: rotate(-45deg) translate(-1px, 1px);
+    transform-origin: left;
+}
+.menu-ham span {
+    background-color: #1C1C1C;
+    text-align: end;
+    font-size: 40px;
+    width: 25px;
+    height: 3px;
+    transition: all .5s ease;
+    display: block;
+}
+/* END NAV */
+/* STAR CONTAINER */
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header feature-1"
+    "header header feature-2";
+
+}
+.hero {
+    grid-area: header;
+    background-image: url(../GAMBAR/Proyek\ Baru.png);
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+}
+.hero .h1,.p {
+    display: none;
+}
+.feature {
+    background-color: black;
+    color: white;
+    display: flex; 
+    padding: 15px;
+    justify-content: center;
+    z-index: -2;
+    align-items: center;
+    flex-direction: column;
+}
+.feature h1 {
+    font-size: 3em;
+    font-weight: 200;
+    color: whitesmoke;
+}
+.feature p {
+   font-weight: 600;
+   text-transform: uppercase;
+   color: lightgrey;
+   font-size: 20px;
+}
+
+.feature-1 {
+    background-image: url(../GAMBAR/hero-1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: feature-1;
+}
+.feature-2 {
+    background-image: url(../GAMBAR/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* END CONTAINER */
+/* KONTENT STAR */
+.services {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.service {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(211, 166, 166);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+} 
+.icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+.service h1 {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.service p {
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 50;
+    margin: auto;
+}
+/* KONTENT END */
+/* RESPONE SHIVE */
+
+/* BREAKPOINT TABLET */
+@media screen and (max-width:768px) {
+    nav {
+        grid-template-columns: .5fr 1.1fr;
+    }
+    .judul h1 {
+        text-align: inherit;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+    }
+    .hero .h1 {
+        margin-bottom: 5px;
+        font-size: 1em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .hero .p {
+        font-size: .7em;
+        margin-right: 153px;
+    }
+    .hero .h1,.p {
+        margin-left: 20px;
+        display: inline;
+        background-color: #1C1C1C;
+        width: fit-content;
+        text-align: start;
+        color: whitesmoke;
+        padding: 15px;
+    }
+    .services {
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* GALERY */
+    .galery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        margin: 0 auto;
+        margin-top: 50px ;
+    }
+}
+/* TABLET END */
+/* BREAKPOINT HANDPHONE */
+@media screen and (max-width:674px) {
+   nav {
+    grid-template-columns: 2fr 50px;
+    text-align: center;
+   }
+   .judul h1 {
+    font-size: 3em;
+   }
+    .menu {
+       position: absolute;
+       opacity: 0;
+       pointer-events: none;
+    }
+    .menu a {
+      border-radius: 5px;
+      background-color: inherit;
+    }
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        width: 200px;
+        pointer-events: inherit;
+        height: 300px;
+        transition: all .3s ease;
+        transform: translateY(-10px);
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        justify-content: space-evenly;
+        right: 0px;
+        min-height: 100vh;
+        top: 96px;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .menu-ham {
+        display: flex;
+    }
+    .container {
+        grid-template-areas: 
+        "header"
+        "feature-1"
+        "feature-2";
+    }
+    .services {
+        grid-template-columns: 1fr;
+        gap: inherit;
+        margin: 0;
+        margin-top: inherit;
+    }
+    .service {
+        border: none;
+        border-radius: inherit;
+    }
+}
+/* HENDPHONE END */

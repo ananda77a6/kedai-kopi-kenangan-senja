@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+body {
+  font-family: "Saira";
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url(../ASSETS/ban-land.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+nav {
+  color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-left: 30px;
+}
+nav h1 {
+  font-size: 1.4em;
+  font-family: "Pacifico";
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: whitesmoke;
+}
+nav .menu {
+  display: flex;
+  gap: 40px;
+  box-sizing: border-box;
+}
+nav .menu li {
+  list-style: none;
+}
+nav .menu a {
+  text-decoration: none;
+  color: rgb(192, 191, 190);
+}
+nav .menu a:hover {
+  background-color: rgb(218, 175, 35);
+  padding: 10px;
+  color: black;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transform: scaleX();
+}
+nav .button a {
+text-decoration: none;
+color:  rgb(192, 191, 190);
+margin-right: 10px;
+}
+nav .button .btn-2 {
+  width: 90px;
+  background-color:rgb(218, 175, 35);
+  border: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 50px;
+}
+/* CONTAINER */
+.container {
+    margin-left: 68px;
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    color: rgb(240, 233, 233);
+   justify-content: center;
+}
+.container h1 {
+    font-size: 5rem;
+    font-family: "Playwrite NO";
+    font-weight: 300;
+    color:whitesmoke;
+    letter-spacing: 1px;
+}
+.container .title {
+    line-height: 0;
+    color: rgb(192, 191, 190);
+    font-size: 1.5em;
+    font-family: serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.container .description {
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-weight: 100;
+  margin-left: 25px;
+  color: white;
+  text-align: start;
+}
+
+.container .btn-content {
+  background-color:rgb(218, 175, 35);
+  border: none;
+  margin-left: 30px;
+  padding: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(39, 38, 38);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.main-menu {
+  width: 50px;
+  height: 50px;
+  /* background-color: white; */
+  gap: 5px;
+  display: none;
+  margin-left: auto;
+  margin-right: 30px;
+  flex-direction: column;
+  size: 50px;
+}
+.main-menu span {
+  width: 20px;
+  height:3px;
+  background-color:rgb(192, 191, 190);
+}
+.bg-menu {
+  display: grid;
+  grid-template-areas: 
+  "menu cofe-1 cofe-2 cofe-3"
+  "menu cofe-4 cofe-5 cofe-6"
+  ;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+.list-menu {
+  grid-area: menu;
+  min-height: 100vh;
+  margin-right: 50x;
+  width: 350px;
+
+}
+.men {
+  width: 250px;
+  height: 250px;
+}
+.cofe-1 {
+  grid-area: cofe-1;
+}
+.cofe-2 {
+  grid-area: cofe-2;
+}
+.cofe-3 {
+  grid-area: cofe-3;
+}
+.cofe-4 {
+  grid-area: cofe-4;
+}
+.cofe-5 {
+  grid-area: cofe-5;
+}
+.cofe-6 {
+  grid-area: cofe-6;
+}
+/*  RESPONIVE BREAK POINT  */
+
+/* START */
+/* BREAKPOINT TABLET */
+@media screen and (max-width:964px) {
+  nav .menu {
+    display: none;
+    transform: translateX(100%);
+  }
+  .main-menu {
+    display: flex;
+    position: relative;
+    transition: .3s ease;
+  }
+  /* .main-menu.on {
+    transition: all 3s ease-in;
+  } */
+  .main-menu.on span {
+    transition: transform .3s ease .2s;
+    position: absolute;
+    background-color: rgb(187, 4, 4);
+    right: 0;
+    top: 30px;
+  }
+  
+  .main-menu.on span:nth-child(1) {
+    transform-origin: right;
+    transform: translateY(3px) translateX(-1px) rotate(45deg);
+  }
+  .main-menu.on span:nth-child(2) {
+    opacity: 0;
+  }
+  .main-menu.on span:nth-child(3) {
+    margin-left: auto;
+    transform-origin: left;
+    transform:  translateY(3px) translateX(4px) rotate(-45deg);
+  }
+  nav .menu.active {
+    display: flex;
+    transform: translateX(0);
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s ease;
+    right: 0;
+    top: 70px;
+    padding: 80px;
+    min-height: 100vh;
+    background-color: black;
+  }
+}
+/* BREAKPOINT HANDPHONE */
+
+/* END */

@@ -1,0 +1,87 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Share tech", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --bg-primary: tomato;
+    --bg-secondary: rgb(15, 15, 156);
+    --txt-primary: white;
+    --txt-secondary:chartreuse;
+}
+
+.container {
+    background-color: var(--bg-primary);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+.wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    padding: 25px;
+    width: 40%;
+    color: var(--txt-primary);
+    background-color: var(--bg-secondary);
+    border: 2px solid white;
+    margin: 10px;
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,.5);
+}
+
+.title {
+    font-size: 2em;
+    margin-left: 13px;
+}
+.icons {
+    font-size:20px;
+    margin-top: 5px;
+    margin-left: 55px;
+}
+.describe {
+   margin-top: 8px;
+   color: var(--txt-secondary);
+   font-size: 1em;
+}
+
+/* icons */
+.fa-youtube {
+    color: tomato;
+}
+.fa-google {
+    color: rgb(250, 214, 52);
+}
+.fa-instagram {
+    color: pink;
+}
+.fa-facebook {
+    color:blue;
+}
+
+/* BUTOON */
+
+
+.btn {
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: rotate(10deg);
+    transition: .2s ease-in-out;
+}
+
+/* RESPONSIVE */
+
+

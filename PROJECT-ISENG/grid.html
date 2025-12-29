@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="grid.css">
+  <title>Grid 3x3 Practice</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 400px;
+      margin: 40px auto;
+      border: 2px solid #000;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+      grid-template-rows: repeat(3, 1fr);    /* 3 baris */
+      gap: 5px;
+    }
+
+    .item {
+      background: skyblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item a">1</div>
+    <div class="item b">2</div>
+    <div class="item c">3</div>
+    <div class="item d">4</div>
+    <div class="item e">5</div>
+    <div class="item f">6</div>
+    <div class="item g">7</div>
+    <div class="item h">8</div>
+    <div class="item i">9</div>
+  </div>
+
+</body>
+</html>

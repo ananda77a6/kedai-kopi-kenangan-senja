@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="project-1.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <title>WEBSITE SIMPLE</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo" id="logo">LOGO</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="tombol">HOME</a></li>
+                <li><a href="#product" class="tombol">PRODUCT</a></li>
+                <li><a href="mailto: juhauya@gmail.com" class="tombol">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="btn"><a href="https://www.instagram.com/gill_098" class="ig">FOLOW ME</a></button>
+    </header>
+    <div class="container" id="home">
+        <div class="intro">
+            <p class="title">Hello, Welcome To My Website</p>
+            <p class="description">Silahkan di lihat gitar favorit anda</p>
+            <img src="/GAMBAR/slide.jpg" alt="anada gilang" class="img-foto">
+        </div>
+    </div>
+    <div class="paralax" id="product">
+        <div class="tentang">
+             <p class="title">Halo guys this my website</p>
+             <p class="description">Belajar coding projecct awal</p>
+            <div class="mt-10">
+                <button class="btn"><a href="https://wa.me/6285143598710" class="wa">Mari Kerjasama</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="item-card">
+                  <img src="/GAMBAR/24-hours.png" alt="icon-1" class="icon">
+                  <p class="card-title">Pelayanan</p>
+                  <p class="card-description">Kami bersedia melayani anda setiap waktu</p>
+                </div>
+                <div class="item-card">
+                    <img src="/GAMBAR/rating.png" alt="icon-2" class="icon">
+                  <p class="card-title">579 Review</p>
+                  <p class="card-description">Berikan review terbaik anda terhadap kami</p>
+                </div>
+                <div class="item-card">
+                    <img src="/GAMBAR/partner.png" alt="icon-3" class="icon">
+                  <p class="card-title">Patnership</p>
+                  <p class="card-description">Kami bersedia bekerja sama bersama anda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+         <p class="card-title">&copy; Website ananda gilang 2025</p>
+    </footer>
+    <script>
+        const logo = document.getElementById('logo')
+        logo.addEventListener('mouseenter', () => {
+            logo.classList.add('animate__animated', 'animate__swing')
+        })
+        logo.addEventListener('animationend', () => {
+            logo.classList.remove('animate__animated', 'animate__swing')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* CODINGAN WEBSITE */
+.container{
+    width: 100vw;
+    
+}
+.navbar {
+    width: 100%;
+    position: relative;
+    background-color: blue;
+    margin: 0px;
+}
+
+.nav {
+    width: 600px;
+    position: relative;
+    text-align: center;
+    margin-left: 25%;
+    box-sizing: border-box;
+}
+.nav .input {
+    width: 600px;
+    padding: 8px 70px 8px 35px;
+    border:  1px solid #ccc;
+    border-radius: 5px;
+    font-size: 21px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.nav .icon-left {
+    position: absolute;
+    top: 45%;
+    left: 13px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+}
+.nav .icon-mic {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    color: #666;
+    cursor: pointer;
+}
+.nav .icon-cam {
+    position: absolute;
+    right: 7px;
+    top: 45%;
+    color: #666;
+    cursor: pointer;
+}
+.menu {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+}
+.menu li a {
+    color: rgb(223, 218, 218);
+    text-decoration: none;
+    font-size: 23px;
+}
+.menu li a:hover {
+    background-color: rgb(248, 103, 103);
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*  INI BAGIAN FLAYY */
+
+.flay {
+    width: 100%;
+    background-color: red;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/* BANNER  */
+.baner {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.baner img {
+    width: 100vw;
+    height: 450px;
+    object-fit: cover;
+}
+
+.baner h1 {
+    position: absolute;
+    font-size: 80px;
+    left: 300px;
+    top: 120px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+}
+.baner .about {
+    position: absolute;
+    font-size: 75px;
+    left: 350px;
+    top: 200px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.baner .shiping {
+    position: absolute;
+    font-size: 73px;
+    left: 300px;
+    top: 290px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+
+/* GALERYY */

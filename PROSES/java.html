@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> SOAL 1.PERHITUNGSN LUAS MATEMATIKA </title>
+</head>
+<body>
+  div class="container">
+<!-- UNTUK LUAS LINGKARAN -->
+ <div class="lingkaran">
+    <!-- input untuk jari-jari  -->
+    <label for="jari" class="sub">MASUKAN JARI-JARI LINGKARAN ANDA</label>
+    <input type="angka" id="jari">
+
+    <!-- Tombol untuk menghitung -->
+     <button onclick="hitungLuas()" class="tombolL">Coba hitung</button>
+
+     <!-- Tempat hasil di tampilkan -->
+      <p id="hasil"></p>
+  </div>
+
+<!-- UNTUK MENGHITUNG LUAS SEGITIGA -->
+<div class="segitiga">
+     <!-- input buat rumus  segitiga -->
+ <label for="alas" class="alas"> MASUKAN ALAS SEGITIGA </label>
+ <input type="number" id="alas">
+ <label for="tinggi">MASUKAN TINGINYA</label>
+ <input type="number" id="tinggi">
+
+ <!-- tombol kalkulasi -->
+  <button onclick="hitungSegitiga()">CEK</button>
+<!--  hasilnya -->
+  <p id="cek"></p>
+  </div>
+  <!-- CODINGAN UNTUK CARI LUAS PERSEGI -->
+   <!-- input -->
+    <div class="persegi">
+     <label for="sisi" class="isi">MASUKAN SISI PERSEGINYA</label>
+     <input type="number" id="sisi">
+    <button onclick="hitungPersegi()">hasil</button>
+    </div>
+    <!-- CODINGAN FOR JAJARGEJANG -->
+    <div class="jajar">
+     <label for="bawah"> MASUKAN ALAS NYA</label>
+     <input type="number" id="bawah">
+     <label for="atas"> MASUKAN TINGGI DARI JAJARGEJANG NYA</label>
+     <input type="number" id="atas">
+     <button onclick="hitungJajar()">hasil</button>
+    </div>
+    <!-- TUGAS KE 2 DARI DEA  -->
+     <div class="board">
+     <label for="nama">Nama Karyawan;</label>
+     <input type="text" id="nama">
+     <label for=" gaji">Gaji Perhari;</label>
+     <input type="text" id="gaji">
+     <label for="absen"> jumblah absen;</label>
+     <input type="text" id="absen">
+     <button onclick="totalGaji()"> Lihat gaji anda;</button>
+     </div>
+
+
+</div>
+      <!-- Link buat terhubung ke javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

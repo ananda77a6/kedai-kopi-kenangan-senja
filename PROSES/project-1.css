@@ -1,0 +1,197 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: auto;
+    cursor: pointer;
+}
+.logo:hover {
+    color: coral;
+}
+li {
+    list-style-type: none;
+}
+.ig {
+    text-decoration: none;
+    color: black;
+}
+.wa {
+     text-decoration: none;
+     color: black;
+}
+
+.tombol {
+    text-decoration: none;
+    color: white;
+}
+.tombol:hover {
+    background-color: aqua;
+    padding: 5px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+.btn {
+    margin-left: 20px;
+    margin-right: 5px;
+    border: none;
+    padding: 10px;
+    background-color: coral;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.title .description {
+    margin: 10px;
+}
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    margin-top:10px ;
+}
+
+/* SLIDE 2 */
+.paralax {
+    background-image: url(GAMBAR/guitar-2141120_1280-removebg-preview.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 35px;
+}
+.mt-10 {
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+} 
+.item-card {
+    color: white;
+    background-color: rgb(95, 95, 82);
+    margin: 4px;
+    padding: 20px;
+    box-shadow: 5px 3px 5px 2px rgba(0,0,0,.8);
+    text-align: center;
+    width: 25%;
+    min-height: 200px;
+    max-height: 300px;
+    cursor: pointer;
+}
+.card-title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.card-description {
+    font-size: 16px;
+    margin-top: 5px;
+}
+.icon {
+    width: 75px;
+    height: 75px;
+    padding: 4px;
+    margin: 8px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(36, 36, 43) ;
+    padding: 6px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+    .card {
+        /* flex-direction: column; */
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .item-card {
+       width: 100%;
+       margin: 0;
+       opacity: .9;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        z-index: 9;
+    }
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer {
+        margin-bottom: 35px;
+        margin-top: 20px;
+    }
+    .container {
+    padding: 0;
+  }
+  
+}
+
+/* PENGHUBUNG (LINK) */
+

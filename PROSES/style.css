@@ -1,0 +1,84 @@
+body {
+background-color: rgb(238, 180, 103);
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.lingkaran {
+    height: 200px;
+    width: 200px;
+    background-color: #faf8f8;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20%;
+    font-weight: bold;
+    color: red;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3)
+}
+.lingkaran .sub {
+    text-align: center;
+}
+.segitiga {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 252, 252);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    border-radius: 20%;
+    color: red;
+    font-weight: bold;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3)
+}
+.alas {
+    text-align: center
+}
+.persegi {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 235, 235);
+    padding: 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20%;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3)
+}
+.persegi .isi {
+    text-align: center;
+}
+
+.jajar {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(253, 252, 252);
+    padding: 5px;
+    border-radius: 20%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+    color: rgb(255, 8, 0);
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.3)
+
+}
+
+
+
+
+
+
+
+/* CSS BUAT TOMBOL  */
+/* BUTTON LINGKARAN */ 
+.tombolL {
+    background-color: black;
+    color: #faf8f8;
+    padding: 8px;
+    border-radius: 30%;
+}
