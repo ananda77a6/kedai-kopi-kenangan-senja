@@ -90,7 +90,7 @@ transform: scaleX(.5);
 
 
 .hero {
-    background-image: url(GAMBAR/header.jpg);
+    background-image: url("GAMBAR/header.jpg");
     min-height: 100vh;
     background-repeat: no-repeat;
     display: flex;
